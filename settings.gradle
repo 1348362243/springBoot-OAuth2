@@ -1,0 +1,9 @@
+rootProject.name = 'springframe'
+include ':projectExample'
+include ':dao'
+include ':scommon'
+include ':smodel'
+project(':projectExample').projectDir = "$rootDir/projectExample" as File
+project(':dao').projectDir = "$rootDir/dao" as File
+project(':scommon').projectDir = "$rootDir/scommon" as File
+project(':smodel').projectDir = "$rootDir/smodel" as File
