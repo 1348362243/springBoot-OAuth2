@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wx.spring.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wx.spring.model.User">
+        <id column="ID" property="id" />
+        <result column="USER_ID" property="userId" />
+        <result column="PASSWORD" property="password" />
+        <result column="PERSON_NUMBER" property="personNumber" />
+        <result column="STATUS" property="status" />
+        <result column="CREATE_DATE" property="createDate" />
+        <result column="UPDATE_TIME" property="updateTime" />
+        <result column="student_number" property="studentNumber" />
+        <result column="unique_number" property="uniqueNumber" />
+        <result column="schoool_code" property="schooolCode" />
+        <result column="pwd_ming" property="pwdMing" />
+        <result column="bind_phone" property="bindPhone" />
+        <result column="contact" property="contact" />
+        <result column="version" property="version" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID AS id, USER_ID AS userId, PASSWORD AS password, PERSON_NUMBER AS personNumber, STATUS AS status, CREATE_DATE AS createDate, UPDATE_TIME AS updateTime, student_number AS studentNumber, unique_number AS uniqueNumber, schoool_code AS schooolCode, pwd_ming AS pwdMing, bind_phone AS bindPhone, contact, version
+    </sql>
+
+</mapper>

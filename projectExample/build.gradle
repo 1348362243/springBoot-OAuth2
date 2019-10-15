@@ -1,0 +1,5 @@
+dependencies {
+  compile project(':smodel')
+  compile project(':dao')
+  compile project(':scommon')
+}
